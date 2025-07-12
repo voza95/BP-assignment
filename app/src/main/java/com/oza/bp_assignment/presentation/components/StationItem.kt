@@ -17,7 +17,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.oza.bp_assignment.R
 import com.oza.bp_assignment.domain.model.Station
-import com.oza.bp_assignment.presentation.screen.Badge
 
 @Composable
 fun StationItem(station: Station) {
