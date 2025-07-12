@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BP-assignment</string>
+    <string name="no_stations_found">No stations found</string>
+    <string name="filters">Filters</string>
+    <string name="open_24_hours">Open 24 Hours</string>
+    <string name="convenience_store">Convenience Store</string>
+    <string name="accepts_bp_card">Accepts BP Card</string>
+    <string name="bp_stations_finder">BP Stations Finder</string>
 </resources>

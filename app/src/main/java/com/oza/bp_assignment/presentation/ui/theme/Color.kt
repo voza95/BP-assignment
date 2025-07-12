@@ -1,4 +1,4 @@
-package com.oza.bp_assignment.ui.theme
+package com.oza.bp_assignment.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

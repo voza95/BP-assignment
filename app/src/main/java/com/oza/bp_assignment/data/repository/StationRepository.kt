@@ -1,6 +1,7 @@
-package com.oza.bp_assignment
+package com.oza.bp_assignment.data.repository
 
-import com.oza.bp_assignment.model.Station
+import com.oza.bp_assignment.domain.model.Station
+import com.oza.bp_assignment.domain.model.StationFilters
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
@@ -67,10 +68,9 @@ class StationRepository {
             // Apply boolean filters
             val openFilter = !filters.open24h || station.isOpen24h
             val storeFilter = !filters.convenienceStore || station.hasConvenienceStore
-            val foodFilter = !filters.hotFood || station.servesHotFood
             val cardFilter = !filters.bpCard || station.acceptsBpCard
 
-            distance && openFilter && storeFilter && foodFilter && cardFilter
+            distance && openFilter && storeFilter && cardFilter
         }
     }
 

@@ -1,11 +1,13 @@
-package com.oza.bp_assignment
+package com.oza.bp_assignment.presentation.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.oza.bp_assignment.model.Station
+import com.oza.bp_assignment.data.repository.StationRepository
+import com.oza.bp_assignment.domain.model.Station
+import com.oza.bp_assignment.domain.model.StationFilters
 import kotlinx.coroutines.launch
 
 class StationViewModel : ViewModel() {
@@ -36,7 +38,6 @@ class StationViewModel : ViewModel() {
         uiState = uiState.copy(filters = when (filterType) {
             "24h" -> uiState.filters.copy(open24h = value)
             "store" -> uiState.filters.copy(convenienceStore = value)
-            "food" -> uiState.filters.copy(hotFood = value)
             "card" -> uiState.filters.copy(bpCard = value)
             else -> uiState.filters
         })

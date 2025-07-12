@@ -1,4 +1,4 @@
-package com.oza.bp_assignment.model
+package com.oza.bp_assignment.domain.model
 
 data class Station(
     val id: String,
@@ -8,6 +8,5 @@ data class Station(
     val longitude: Double,
     val isOpen24h: Boolean = false,
     val hasConvenienceStore: Boolean = false,
-    val servesHotFood: Boolean = false,
     val acceptsBpCard: Boolean = false
 )
